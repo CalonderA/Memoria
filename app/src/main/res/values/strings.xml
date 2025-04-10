@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Memoria</string>
+    <string name="memoria">Memoria</string>
+    <string name="quit">Quit</string>
+    <string name="restart">Restart</string>
+    <string name="back">Back</string>
+    <string name="records">records</string>
+</resources>

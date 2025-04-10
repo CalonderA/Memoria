@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im_menu_back"
+    tools:context=".presentation.MenuActivity">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/my_main_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/im_menu_text"
+        android:textAllCaps="true"
+        android:text="Settings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sound"
+        style="@style/my_tv_style"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/im_menu_button"
+        android:text="Sound"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@id/tv_collection"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView2"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+
+    <TextView
+        android:id="@+id/tv_collection"
+        style="@style/my_tv_style"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/im_menu_button"
+        android:text="Collection"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@id/tv_difficulty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sound" />
+
+    <TextView
+        android:id="@+id/tv_difficulty"
+        style="@style/my_tv_style"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:textAllCaps="true"
+        android:background="@drawable/im_menu_button"
+        android:text="Difficulty"
+        app:layout_constraintBottom_toTopOf="@id/tv_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_collection" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/my_tv_style"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/im_menu_button"
+        android:text="@string/back"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_difficulty" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_game_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/im_game_process_back"
+    tools:context=".presentation.GameProcessActivity">
+
+
+    <GridView
+        android:id="@+id/gv_game_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:horizontalSpacing="3dp"
+        android:verticalSpacing="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.498"
+        tools:layout_height="450dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/im_record_star"
+        app:layout_constraintStart_toStartOf="@+id/gv_game_field"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tx_points"
+        style="@style/my_tv_style.green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        tools:text="200" />
+
+    <TextView
+        android:id="@+id/tv_back"
+        style="@style/my_tv_style.small"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/im_game_process_stop"
+        android:text="@string/quit"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_restart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gv_game_field" />
+
+    <TextView
+        android:id="@+id/tv_restart"
+        style="@style/my_tv_style.small"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/im_game_process_stop"
+        android:text="@string/restart"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_back"
+        app:layout_constraintTop_toBottomOf="@+id/gv_game_field" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
