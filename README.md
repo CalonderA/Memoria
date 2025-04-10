@@ -25,3 +25,6 @@ Themed sets: Animal cards, and paws. Each set is unique and interesting.
 Relaxing atmosphere: Pleasant music and animation create a cozy atmosphere for the game.
 Time-based mode: For those who like challenges, there is an opportunity to play against the clock.
 Achievements and Rewards: Collect achievements, improve your scores, and share your successes with your friends.
+
+
+![image](https://github.com/user-attachments/assets/2f1e5391-9b33-4b17-8a3c-4b84d1802ca8)
